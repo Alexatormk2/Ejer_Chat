@@ -42,6 +42,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Servidor (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Servidor" />
+      <module name="Alexander_EjerChat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Servidor (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Servidor" />
+      <module name="Alexander_EjerChat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Servidor (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Servidor" />
+      <module name="Alexander_EjerChat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Servidor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Servidor" />
       <module name="Alexander_EjerChat" />
@@ -51,12 +72,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Servidor" />
+      <item itemvalue="Application.Servidor (1)" />
+      <item itemvalue="Application.Servidor (2)" />
+      <item itemvalue="Application.Servidor (4)" />
       <item itemvalue="Application.Cliente" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Cliente" />
+        <item itemvalue="Application.Servidor (2)" />
+        <item itemvalue="Application.Servidor (1)" />
         <item itemvalue="Application.Servidor" />
+        <item itemvalue="Application.Servidor (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -69,7 +96,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666810599570</updated>
       <workItem from="1666810600746" duration="333000" />
-      <workItem from="1666811048286" duration="772000" />
+      <workItem from="1666811048286" duration="3352000" />
     </task>
     <servers />
   </component>

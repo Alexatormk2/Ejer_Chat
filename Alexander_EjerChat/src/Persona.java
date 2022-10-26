@@ -1,7 +1,12 @@
-public class Persona {
+import java.io.Serializable;
+import java.net.ServerSocket;
+
+public class Persona implements Serializable {
 
     String nombre;
     String mensaje;
+
+
 
     public Persona(String nombre, String mensaje) {
         this.nombre = nombre;
