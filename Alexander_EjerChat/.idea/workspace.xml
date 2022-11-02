@@ -26,14 +26,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/9FDAM10/Documents/Ejer_Chat/Alexander_EjerChat"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/9FDAM10/Documents/Ejer_Chat/Alexander_EjerChat&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Cliente">
     <configuration name="Cliente" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Cliente" />
@@ -42,14 +42,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Servidor (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Servidor (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Servidor" />
       <module name="Alexander_EjerChat" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Servidor (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Servidor (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Servidor" />
       <module name="Alexander_EjerChat" />
       <method v="2">
@@ -71,8 +71,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Servidor (3)" />
       <item itemvalue="Application.Servidor" />
-      <item itemvalue="Application.Servidor (1)" />
       <item itemvalue="Application.Servidor (2)" />
       <item itemvalue="Application.Servidor (4)" />
       <item itemvalue="Application.Cliente" />
@@ -80,10 +80,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Cliente" />
-        <item itemvalue="Application.Servidor (2)" />
-        <item itemvalue="Application.Servidor (1)" />
-        <item itemvalue="Application.Servidor" />
         <item itemvalue="Application.Servidor (4)" />
+        <item itemvalue="Application.Servidor (3)" />
+        <item itemvalue="Application.Servidor" />
+        <item itemvalue="Application.Servidor (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -97,6 +97,7 @@
       <updated>1666810599570</updated>
       <workItem from="1666810600746" duration="333000" />
       <workItem from="1666811048286" duration="3352000" />
+      <workItem from="1667410495383" duration="2541000" />
     </task>
     <servers />
   </component>

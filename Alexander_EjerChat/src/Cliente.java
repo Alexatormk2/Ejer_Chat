@@ -23,14 +23,20 @@ public class Cliente {
         p.setMensaje(p.getNombre() + " se a conectado");
         int opcion =0;
         escribir.writeObject(p);
-      escri.write(opcion);
+    //  escri.write(opcion);
 
         do {
             System.out.println("Menu");
             System.out.println("1.Escribir en chat");
             System.out.println("2.Salir");
 
-            opcion = Integer.parseInt(br.readLine());
+            try {
+                opcion = Integer.parseInt(br.readLine());
+            } catch (NumberFormatException e) {
+                System.out.println("Error se esperaba numero");
+            } catch (IOException e) {
+                System.out.println("Error inesperado por favor revise");
+            }
 
 
             switch (opcion) {
@@ -40,18 +46,21 @@ public class Cliente {
                     String paloma = br.readLine();
 
                     p.setMensaje(p.getNombre() + ": " + paloma);
-                    escribir.writeObject(p);
+                    p.setOpcion(opcion);
+                    System.out.println(p.getMensaje());
+                    escribir.writeObject(p = new Persona(nombre,paloma,opcion));
 
                     break;
                 case 2:
                     p.setMensaje("salir");
-
+                    p.setOpcion(1);
                     break;
 
 
             }
 
         } while (opcion != 2);
+
         socket.close();
 
 
