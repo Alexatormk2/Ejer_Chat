@@ -78,7 +78,7 @@ class EchoThread extends Thread {
 
         //printea el mensaje
 
-                System.out.println(p.getMensaje());
+                System.out.println(p.getNombre() + ": " + p.getMensaje());
              //busca si llego algo nuevo
 
                 p = (Persona) leer.readObject();

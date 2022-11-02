@@ -14,8 +14,7 @@ public class Cliente {
         Socket socket = new Socket(host, puerto);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         ObjectOutputStream escribir = new ObjectOutputStream(socket.getOutputStream());
-        OutputStreamWriter escri = new OutputStreamWriter(socket.getOutputStream());
-        ObjectInputStream leer = new ObjectInputStream(socket.getInputStream());
+
 
         Persona p = new Persona();
         System.out.println("Nombre de usuario");
