@@ -12,7 +12,7 @@ public class Servidor {
     public static void main(String args[]) {
         ServerSocket serverSocket = null;
         Socket socket = null;
-
+//crea el server sockets
         try {
             serverSocket = new ServerSocket(PORT);
         } catch (IOException e) {
@@ -21,11 +21,13 @@ public class Servidor {
         }
         while (true) {
             try {
+                //acepta lo que venga del cliente
                 socket = serverSocket.accept();
             } catch (IOException e) {
                 System.out.println("I/O error: " + e);
             }
             // new thread for a client
+            //llama al hilo
             new EchoThread(socket).start();
         }
 
@@ -35,50 +37,54 @@ public class Servidor {
 class EchoThread extends Thread {
     protected Socket socket;
     int contador =0;
-    String linea;
+
+    //constructor para recibir el socket
     public EchoThread(Socket clientSocket) {
         this.socket = clientSocket;
     }
 
     public void run() {
+        //variable creadas de antemano para su posterior uso
 
-        ObjectOutputStream escribir = null;
 
-        InputStreamReader le = null;
         ObjectInputStream leer = null;
-        int opcion = 0;
+
+        //persona que se usara de placeholder
         Persona p = new Persona("","",0);
         try {
-linea = "hola";
-            escribir = new ObjectOutputStream(socket.getOutputStream());
-            leer = new ObjectInputStream(socket.getInputStream());
-            le = new InputStreamReader(socket.getInputStream());
 
+            leer = new ObjectInputStream(socket.getInputStream());
+
+            //inicio del chat
             System.out.println("--------CHAT-------");
 
 
         } catch (IOException e) {
             return;
         }
-        try {
+        try {//lee el objeto que llegue desde el cliente
+            //esta es la primera carga para que no empieze null
             p = (Persona) leer.readObject();
         } catch (IOException e) {
+            //en caso de null o error se muestra uno de estos dos mensajes
             System.out.println("Usuario desconectado");
         } catch (ClassNotFoundException e) {
             System.out.println("Usuario desconocido");
         }
+        //loop del chat
         do {
 
             try {
-               // p = (Persona) leer.readObject();
-                String mensaje = p.getMensaje();
-                //linea =  p.getMensaje();
+
+        //printea el mensaje
+
                 System.out.println(p.getMensaje());
-                System.out.println("segunda lectura  ");
+             //busca si llego algo nuevo
 
                 p = (Persona) leer.readObject();
             } catch (IOException e) {
                 System.out.println("Usuario desconectado");
+                //si el usuario se desconecta se suma +1 a contado que al llegar a 40 cierra el servidor
                 contador++;
             } catch (ClassNotFoundException e) {
                 System.out.println("Usuario desconocido");
